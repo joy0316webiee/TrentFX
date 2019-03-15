@@ -92,7 +92,7 @@ body, input {
 
 #header>.ads img:nth-child(1) {
   position: absolute;
-  top: 171px;
+  top: 257px;
   left: -44px;
 }
 
@@ -131,21 +131,15 @@ body, input {
   justify-content: space-between;
 }
 
-#header>.ads .board .button-trans {
+#header>.ads .board .input-trans {
   flex-basis: 30%;
   color: white;
   background: transparent;
   border: 3px solid white;
   font-size: 19px;
   border-radius: 11px;
-  padding: 8px 55px;
+  padding: 8px 25px;
   margin-right: 21px;
-}
-
-#header>.ads .board .button-trans:hover {
-  cursor: pointer;
-  color: black;
-  background: white;
 }
 
 #header>.ads .control-group {
@@ -414,7 +408,7 @@ body, input {
 
 #footer>.link .link-group {
   float: left;
-  flex-basis: 25%;
+  flex-basis: 23%;
   padding: 5px 10px 5px 10px;
 }
 
@@ -431,15 +425,14 @@ body, input {
   color: white;
 }
 
-#footer>.link .contact .trend {
-  color: white;
-  font-size: 25px;
+#footer>.link .contact {
+  flex-basis: 31%;
+  min-width: 250px;
 }
 
+#footer>.link .contact .trend,
 #footer>.link .contact .verisign {
-  color: white;
-  font-size: 18px;
-  line-height: 25px;
+  width: 100px;
 }
 
 #footer>.link .link-group .social a {
@@ -452,6 +445,16 @@ body, input {
 
 #footer>.link .link-group .social a:hover {
   opacity: 0.7;
+}
+
+#footer>.link .link-group .secur {
+  width: 24px;
+  height: 27px;
+  margin-right: 10px;
+}
+
+#footer>.link .link-group p.secur-text {
+  margin-top: 2px;
 }
 
 #footer>.copyright {
@@ -467,7 +470,24 @@ body, input {
   font-size: 17px;
 }
 
+/* Input text placeholder color */
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
 /* COMMON STYLE */
+.flex {
+  display: flex !important;
+}
+
 .inline {
   display: inline-block !important;
 }
@@ -504,21 +524,21 @@ body, input {
 }
 
 /*--- Media Queries ---*/
-@media (max-width: 1322px) {
+@media (max-width: 1405px) {
   #header>.ads .board h1 {
     font-size: 36px;
     font-weight: 100;
   }
 
-  #header>.ads .board .button-trans {
+  #header>.ads .board .input-trans {
     flex-basis: 30%;
     color: white;
     background: transparent;
     border: 2px solid white;
     font-size: 20px;
     border-radius: 5px;
-    padding: 5px 30px;
-    margin-right: 14px;
+    padding: 5px 0px;
+    margin-right: 10px;
   }
 
   #body>.meta-trader .meta-body .meta-title > img {
@@ -531,13 +551,13 @@ body, input {
   }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1290px) {
   .ads-img {
     display: none;
   }
 
   #header {
-    height: 550px;
+    height: 600px;
   }
 
   #header>.ads {
@@ -575,12 +595,92 @@ body, input {
     font-size: 20px !important;
   }
 
-  button {
+  input, button {
     font-size: 15px !important;
+  }
+
+  #header {
+    height: 733px;
+  }
+
+  #header>.banner {
+    padding: 15px;
+  }
+
+  #header>.banner>.logo {
+    float: left;
+    margin-top: 25px;
+  }
+
+  #header>.banner>.contact {
+    display: inherit;
+    float: right;
+  }
+
+  #header>.banner .whatsapp {
+    margin-bottom: 21px;
+    display: block !important;
+  }
+
+  #header>.banner .whatsapp a {
+    display: block !important;
+    margin-top: 33px;
+  }
+
+  #header>.banner .whatsapp img:nth-child(1) {
+    position: absolute;
+    top: -39px;
+    right: -6px;
+  }
+
+  #header>.banner .whatsapp img:nth-child(2) {
+    position: absolute;
+    top: -37px;
+    right: -5px;
+  }
+  
+  #header>.ads .board .button-group {
+    display: inherit;
+    margin-top: 72px;
+  }
+
+  #header>.ads h1 {
+    margin-top: 61px;
+  }
+
+  #header>.ads .board .input-trans {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin: 0 auto;
+    margin-bottom: 9px;
+    width: 92%;
+  }
+
+  #header>.ads .control-group {
+    padding: 10px 0px 0px 0px;
+  }
+
+  #header>.ads .control-group .check-group {
+    float: left;
+    margin-left: 61px;
+  }
+
+  #header>.ads .control-group .button-red {
+    margin: 0 auto;
+    margin-bottom: -37px;
+    float: inherit;
   }
 
   .trend-img {
     width: 150px !important;
+  }
+
+  #body .range-body {
+    padding: 37px;
   }
 
   #body>.advantages .adv-item,
@@ -590,7 +690,16 @@ body, input {
 
   #body>.meta-trader .meta-body,
   #body>.description .desc-body,
-  #body .range-body {
+  #footer>.copyright {
     padding: 30px;
+  }
+
+  #footer>.link {
+    padding: 30px 70px 20px 70px;
+  }
+  
+  #footer>.link .link-group {
+    margin: 0 auto !important;
+    min-width: 250px;
   }
 }
