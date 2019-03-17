@@ -653,7 +653,7 @@ body, input {
   #header>.banner>.contact {
     display: inherit;
     float: right;
-    margin-right: 10px;
+    margin-right: 0px;
   }  
 
   #header>.banner .whatsapp {
@@ -688,6 +688,18 @@ body, input {
   #header>.banner .whatsapp a {
     display: block !important;
     margin-top: 33px;
+  }
+
+  #header>.banner .whatsapp img:nth-child(1) {
+    position: absolute;
+    top: -20px;
+    right: 65px;
+  }
+
+  #header>.banner .whatsapp img:nth-child(2) {
+    position: absolute;
+    top: -21px;
+    right: 66px;
   }
   
   #header>.ads .board .button-group {
