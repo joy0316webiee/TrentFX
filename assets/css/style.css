@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: Gotham Narrow-Black;
+  font-family: Gotham Narrow-Bold;
   src: url('../fonts/GothamNarrow-Black.otf');
 }
 
@@ -19,7 +19,6 @@
 
 body, input {
   overflow-x: hidden;
-  max-width: 1480px;
   margin: 0 auto;
   text-align: center;
   background-color: black;
@@ -27,12 +26,11 @@ body, input {
 }
 
 #header {
-  height: 801px;
+  height: 1007px;
   background-image: url("../image/header-bg.png");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 132%;
+  background-position: 0px -144px;
   border-bottom: 3px solid #4bc9ff;
   color: white;
   overflow: hidden;
@@ -41,7 +39,7 @@ body, input {
 #header>.banner {
   width: 100%;
   height: 100px;
-  padding: 30px 165px;
+  padding: 30px 262px;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -56,7 +54,7 @@ body, input {
 
 #header>.banner>.contact {
   float: right;
-  margin-right: 71px;
+  margin-right: 45px;
 }
 
 #header>.banner .whatsapp {
@@ -66,13 +64,13 @@ body, input {
 #header>.banner .whatsapp img:nth-child(1) {
   position: absolute;
   top: -20px;
-  right: 65px;
+  right: 107px;
 }
 
 #header>.banner .whatsapp img:nth-child(2) {
   position: absolute;
-  top: -21px;
-  right: 66px;
+  top: -19px;
+  right: 107px;
 }
 
 #header>.banner .whatsapp img:nth-child(3) {
@@ -83,11 +81,10 @@ body, input {
 
 #header>.banner .fa {
   color: white;
-  width: 27px;
-  padding: 5px;
+  width: 30px;
+  padding: 3px;
   margin-right: -3px;
-  font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -104,44 +101,46 @@ body, input {
 
 #header>.ads img:nth-child(1) {
   position: absolute;
-  top: 170px;
-  left: -110px;
+  top: 218px;
+  width: 902px;
+  left: -131px;
 }
 
 #header>.ads img:nth-child(2) {
   position: absolute;
-  top: -21px;
-  right: 56px;
+  left: -90px;
+  top: 257px;
 }
 
 #header>.ads .board {
   position: absolute;
-  left: 607px;
-  top: 165px;
+  left: 782px;
+  top: 187px;
   text-align: left;
 }
 
 #header>.ads .board h1 {
-  font-size: 47px;
-  font-weight: lighter;
-  font-family: Gotham Narrow-Black;
+  font-size: 61px;
+  font-weight: 100;
+  font-family: Gotham Narrow-Bold;
 }
 
 #header>.ads .board p.desc1 {
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 500;
 }
 
 #header>.ads .board p.desc2 {
   display: inline-block;
-  font-size: 17px;
-  font-size: 17px;
-  padding: 40px 10px;
+  font-size: 21px;
+  font-family: Gotham Narrow-Light;
+  padding: 50px 10px;
 }
 
 #header>.ads .board .button-group {
   display: flex;
   justify-content: space-between;
+  margin-top: 67px;
 }
 
 #header>.ads .board .input-trans {
@@ -149,10 +148,11 @@ body, input {
   color: white;
   background: transparent;
   border: 2px solid white;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: Gotham Narrow-Light;
   border-radius: 11px;
-  padding: 11px 12px;
-  margin-right: 17px;
+  padding: 14px 0px;
+  margin-right: 21px;
 }
 
 #header>.ads .control-group {
@@ -169,7 +169,8 @@ body, input {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 21px;
+  font-family: Gotham Narrow-Light;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -177,6 +178,7 @@ body, input {
 }
 
 /* Hide the browser's default checkbox */
+
 #header>.ads .control-group .control input {
   position: absolute;
   opacity: 0;
@@ -186,27 +188,31 @@ body, input {
 }
 
 /* Create a custom checkbox */
+
 #header>.ads .control-group .checkmark {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: transparent;
   border: 3px solid white;
 }
 
 /* On mouse-over, add a grey background color */
-#header>.ads .control-group .control:hover input ~ .checkmark {
+
+#header>.ads .control-group .control:hover input~.checkmark {
   background-color: white;
 }
 
 /* When the checkbox is checked, add a blue background */
-#header>.ads .control-group .control input:checked ~ .checkmark {
+
+#header>.ads .control-group .control input:checked~.checkmark {
   background-color: transparent;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 #header>.ads .control-group .checkmark:after {
   content: "";
   position: absolute;
@@ -214,14 +220,16 @@ body, input {
 }
 
 /* Show the checkmark when checked */
-#header>.ads .control-group .control input:checked ~ .checkmark:after {
+
+#header>.ads .control-group .control input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
+
 #header>.ads .control-group .control .checkmark:after {
-  left: 3px;
-  top: -1px;
+  left: 7px;
+  top: 3px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -235,9 +243,9 @@ body, input {
   position: relative;
   background-color: #fafafa;
   background-image: url(../image/Advatage_bg.png);
-  background-size: 120% 803px;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: -241px 35px;
+  background-position: 70% 60%;
 }
 
 #body>.advantages .adv-items {
@@ -255,42 +263,42 @@ body, input {
 
 #body>.advantages .adv-head img.odul {
   position: absolute;
-  left: 41px;
-  top: -331px;
+  left: 82px;
+  top: -436px;
+  height: 487px;
 }
 
 #body>.advantages .adv-body {
-  padding: 70px 70px;
+  padding: 100px 94px 200px 94px;
 }
 
 #body>.advantages .adv-body h1 {
   margin: 0px;
-  font-size: 36px;
+  font-size: 45px;
   color: #414042;
-  font-weight: 100;
-  font-family: Gotham Narrow-Black;
-}
-
-#body >.advantages .adv-body h3 {
-  font-family: Gotham Narrow-Black;
-  font-size: 16px;
-  color: #414042;
-}
-
-#body >.advantages .adv-body p {
-  font-size: 14px;
+  font-family: Gotham Narrow-Bold;
 }
 
 #body>.advantages .adv-marker {
   background-color: #4bcaff;
-  padding: 33px 2px;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto;
+  position: relative;
 }
 
+#body>.advantages .adv-marker>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+#body >.advantages .adv-item h3 {
+  font-family: Gotham Narrow-Bold;
+  color: #414042;
+}
 
 #body>.meta-trader {
   position: relative;
@@ -299,8 +307,7 @@ body, input {
   background-image: linear-gradient(#001e49 0%, #004a80 20%, #0069a6 90%);
 }
 
-#body>.meta-trader .meta-head,
-#body>.product-range .range-head {
+#body>.meta-trader .meta-head, #body>.product-range .range-head {
   width: 100%;
   height: 20px;
   background-color: #12509d;
@@ -309,36 +316,34 @@ body, input {
 }
 
 #body>.meta-trader .meta-body {
-  padding: 350px 165px 30px 163px;
+  padding: 350px 165px 84px 163px;
 }
 
-#body>.meta-trader .meta-body .meta-title > img {
+#body>.meta-trader .meta-body .meta-title>img {
   position: absolute;
   top: -43px;
-  left: 375px;
+  left: 572px;
 }
 
-#body>.meta-trader .meta-body .meta-title > h1 {
-  font-size: 36px;
-  font-family: Gotham Narrow-Black;
-  font-weight: lighter;
-  letter-spacing: 1px;
+#body>.meta-trader .meta-body .meta-title>h1 { 
+  font-size: 45px;
+  font-family: Gotham Narrow-Bold;
 }
 
 #body>.meta-trader .meta-items {
-  margin-top: 50px;
+  margin-top: 62px;
 }
 
 #body>.meta-trader .meta-item {
-  font-size: 23px;
-  line-height: 36px;
+  font-size: 30px;
   font-family: Gotham Narrow-Light;
+  line-height: 36px;
 }
 
-#body>.meta-trader .meta-item > h3 {
-  font-size: 23px;
-  line-height: 36px;
-  font-family: Gotham Narrow-Black;
+#body>.meta-trader .meta-item>h3 {
+  font-size: 30px;
+  font-family: Gotham Narrow-Bold;
+  margin-top: 57px;
 }
 
 #body>.product-range {
@@ -347,13 +352,14 @@ body, input {
 
 #body .range-title h1 {
   color: #414042;
-  font-family: Gotham Narrow-Black;
-  font-size: 35px;
-  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 45px;
+  font-family: Gotham Narrow-Bold;
+  padding: 38px 0px 38px 0px;
 }
 
 #body .range-body {
-  padding: 29px 170px;
+  padding: 30px 165px 100px 165px;
 }
 
 #body .range-title {
@@ -363,32 +369,35 @@ body, input {
 #body .range-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0px 44px 0px 1px;
+  justify-content: space-around;
 }
 
 #body .range-item {
-  flex-basis: 26%;
-  padding: 10px;
-  margin-bottom: 14px;
-  width: 336px;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 400px;
 }
 
 #body .range-one {
   background-image: url("../image/range1.png");
 }
+
 #body .range-two {
   background-image: url("../image/range2.png");
 }
+
 #body .range-three {
   background-image: url("../image/range3.png");
 }
+
 #body .range-four {
   background-image: url("../image/range4.png");
 }
+
 #body .range-five {
   background-image: url("../image/range5.png");
 }
+
 #body .range-six {
   background-image: url("../image/range6.png");
 }
@@ -399,23 +408,27 @@ body, input {
   background-position: -69px -43px;
   border-radius: 9px;
   height: 214px;
-  max-width: 296px;
+  max-width: 360px;
   margin-bottom: 15px;
 }
 
 #body .range-thumail h3 {
-  padding-top: 93px;
+  position: absolute;
   color: white;
   font-size: 24px;
   letter-spacing: -2px;
   line-height: 27px;
   font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
 }
 
 #body>.description {
   color: #494949;
-  background-color: white; 
+  background-color: white;
   font-size: 23px;
+  font-family: Gotham Narrow-Light;
   line-height: 34px;
   text-align: center;
 }
@@ -428,7 +441,11 @@ body, input {
 }
 
 #body>.description .desc-body {
-  padding: 60px 165px 70px 165px;
+  padding: 60px 255px 115px 255px;
+}
+
+#body>.description .desc-body p {
+  margin-bottom: 30px;
 }
 
 #footer>.link {
@@ -453,11 +470,11 @@ body, input {
   margin-bottom: 10px;
 }
 
-#footer>.link  a {
+#footer>.link a {
   color: #b4d2dc;
 }
 
-#footer>.link  a:hover {
+#footer>.link a:hover {
   color: white;
 }
 
@@ -466,8 +483,7 @@ body, input {
   min-width: 250px;
 }
 
-#footer>.link .contact .trend,
-#footer>.link .contact .verisign {
+#footer>.link .contact .trend, #footer>.link .contact .verisign {
   width: 100px;
 }
 
@@ -498,7 +514,7 @@ body, input {
   color: #c1e0d4;
   background-color: #009c71;
   width: 100%;
-  padding: 30px 180px 20px 180px;
+  padding: 30px 277px;
 }
 
 #footer>.copyright h1 {
@@ -507,11 +523,14 @@ body, input {
 }
 
 /* Input text placeholder color */
-::-webkit-input-placeholder { /* Edge */
+
+::-webkit-input-placeholder {
+  /* Edge */
   color: white;
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
+:-ms-input-placeholder {
+  /* Internet Explorer */
   color: white;
 }
 
@@ -520,6 +539,7 @@ body, input {
 }
 
 /* COMMON STYLE */
+
 .flex {
   display: flex !important;
 }
@@ -537,13 +557,12 @@ body, input {
 }
 
 .button-red {
-  margin-right: -15px;
-  font-size: 17px;
-  font-family: Gotham Narrow-Black;
+  font-size: 21px;
   color: #f5f5f5;
-  font-weight: lighter;
-  width: 194px;
-  height: 51px;
+  font-weight: 100;
+  font-family: Gotham Narrow-Bold;
+  width: 233px;
+  height: 59px;
   border-radius: 26px;
   border-color: red;
   background-color: #ff0000;
@@ -561,47 +580,77 @@ body, input {
   width: 100%
 }
 
+strong {
+  font-family: Gotham Narrow;
+}
+
 /*--- Media Queries ---*/
-@media (max-width: 1405px) {
+@media (max-width: 1689px) {
   #header>.ads .board h1 {
-    font-size: 36px;
-    font-weight: 100;
+    font-size: 48px;
   }
-
-  #header>.ads .board .input-trans {
-    flex-basis: 30%;
-    color: white;
-    background: transparent;
-    border: 2px solid white;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 5px 0px;
-    margin-right: 10px;
-  }
-
-  #body>.meta-trader .meta-body .meta-title > img {
-    left: 223px;
-  }
-
-  #footer>.link,
-  #footer>.copyright {
-    padding: 30px 100px 20px 100px;
+  #header {
+    background-size: 100% 1153px;
   }
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1689px) {
+  #header {
+    height: 883px;
+  }
+  #header>.ads .board h1 {
+    font-size: 44px;
+  }
+  #header>.ads .board {
+    position: absolute;
+    left: 682px;
+    top: 153px;
+    text-align: left;
+  }
+  #header>.ads .board p.desc1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #header>.ads img:nth-child(1) {
+    position: absolute;
+    top: 175px;
+    width: 795px;
+    left: -131px;
+  }
+  #body>.advantages .adv-head img.odul {
+    position: absolute;
+    left: 40px;
+    top: -395px;
+    height: 455px;
+  }
+  #header>.ads .board .input-trans {
+    font-size: 20px;
+    border-radius: 11px;
+    padding: 10px 0px;
+    margin-right: 23px;
+  }
+  .button-head {
+    font-size: 19px;
+    width: 209px;
+    height: 55px;
+  }
+  #body>.meta-trader .meta-body .meta-title>img {
+    position: absolute;
+    top: -43px;
+    left: 382px;
+  }
+}
+@media (max-width: 1390px) {
   .ads-img {
     display: none;
   }
-
   #header {
-    height: 600px;
+    height: 709px;
+    background-size: 100% 965px;
   }
-
   #header>.ads {
     position: inherit;
   }
-
   #header>.ads .board {
     position: inherit;
     float: inherit;
@@ -610,95 +659,74 @@ body, input {
   #header>.ads .control-group {
     text-align: left;
   }
-
   #header>.banner>.contact {
     display: none;
   }
-
   #header>.banner>.logo {
     float: inherit;
   }
-
-  #body>.meta-trader .meta-body .meta-title > img {
+  #body>.meta-trader .meta-body .meta-title>img {
     display: none;
   }
-
   #body>.meta-trader .meta-body {
-    padding: 50px 165px 30px 163px;
+    padding: 350px 165px 68px 163px;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 20px !important;
+    font-size: 23px !important;
   }
-
   input, button {
     font-size: 15px !important;
   }
-
   #header {
-    height: 733px;
+    height: 669px;
+    background-position: 0px -79px;
+    background-size: 150% 112%;
   }
-
   #header>.banner {
     padding: 15px;
+    height: 81px;
   }
-
   #header>.banner>.logo {
     float: left;
     margin-top: 25px;
   }
-
   #header>.banner>.contact {
     display: inherit;
     float: right;
-    margin-right: 10px;
-  }  
-
+    margin-right: 14px;
+  }
   #header>.banner .whatsapp {
     margin-bottom: 21px;
     display: block !important;
   }
-
-  #header>.banner .whatsapp img:nth-child(1) {
-    position: absolute;
-    top: -39px;
-    right: -6px;
-  }
-
-  #header>.banner .whatsapp img:nth-child(2) {
-    position: absolute;
-    top: -37px;
-    right: -5px;
-  }
-
-  #header>.banner .whatsapp img:nth-child(1) {
-    position: absolute;
-    top: -39px;
-    right: -6px;
-  }
-
-  #header>.banner .whatsapp img:nth-child(2) {
-    position: absolute;
-    top: -37px;
-    right: -5px;
-  }
-
   #header>.banner .whatsapp a {
     display: block !important;
     margin-top: 33px;
   }
-  
+  #header>.banner .whatsapp img:nth-child(1) {
+    position: absolute;
+    top: -39px;
+    right: -1px;
+  }
+  #header>.banner .whatsapp img:nth-child(2) {
+    position: absolute;
+    top: -37px;
+    right: -1px;
+  }
   #header>.ads .board .button-group {
     display: inherit;
-    margin-top: 72px;
+    margin-top: 100px;
+    margin-top: 33px;
   }
-
   #header>.ads h1 {
     margin-top: 61px;
   }
-
+  #header>.ads .board p.desc1 {
+    font-size: 18px;
+  }
   #header>.ads .board .input-trans {
     color: white;
     background: transparent;
@@ -710,61 +738,82 @@ body, input {
     margin-bottom: 9px;
     width: 92%;
   }
-
   #header>.ads .control-group {
     padding: 10px 0px 0px 0px;
   }
-
   #header>.ads .control-group .check-group {
     float: left;
     margin-left: 61px;
   }
-
   #header>.ads .control-group .button-red {
     margin: 0 auto;
-    margin-bottom: -37px;
+    margin-bottom: 0px;
+    padding: 8px 7px;
     float: inherit;
+    height: 40px;
+    width: 80%;
   }
-
+  #header>.ads .control-group .control {
+    font-size: 17px;
+  }
+  #header>.ads .board p.desc2 {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Gotham Narrow-Light;
+    padding: 19px 10px;
+  }
   .trend-img {
     width: 150px !important;
   }
-
   #body .range-body {
     padding: 37px;
   }
-
-  #body .range-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0px 2px;
+  #body>.advantages {
+    /* background-position: -68px 487px; */
+    /* background-size: 124% 26%; */
   }
-
-  #body .range-item {
-    flex-basis: inherit;
-    padding: 20px;
-    width: 336px;
+  #body>.advantages .adv-body {
+    padding: 100px 20px 50px 20px;
   }
- 
-
+  #body>.advantages .adv-marker {
+    width: 120px;
+    height: 120px;
+  }
   #body>.advantages .adv-item,
   #footer>.link .link-group {
     margin: 0 auto !important;
   }
-
-  #body>.meta-trader .meta-body,
-  #body>.description .desc-body,
-  #footer>.copyright {
+  #body>.advantages .adv-item {
+    flex-basis: inherit;
+    font-size: 13px;
+    flex-basis: 50%;
+  }
+  #body>.meta-trader .meta-item>h3 {
+    font-size: 20px;
+  }
+  #body>.meta-trader .meta-item {
+    font-size: 18px;
+  }
+  #body>.meta-trader .meta-body, #body>.description .desc-body, #footer>.copyright {
     padding: 30px;
   }
-
-  #footer>.link {
-    padding: 30px 70px 20px 70px;
+  #body .range-thumail h3 {
+    font-size: 18px;
   }
-  
+  #body>.description {
+    font-size: 18px;
+  }
+  #footer>.link {
+    padding: 30px 10px 20px 10px;
+  }
   #footer>.link .link-group {
     margin: 0 auto !important;
-    min-width: 250px;
+    min-width: 305px;
+  }
+  #footer>.link .link-group .secur {
+    margin-right: 5px;
+  }
+  #footer>.copyright h1 {
+    font-size: 17px !important;
   }
 }
