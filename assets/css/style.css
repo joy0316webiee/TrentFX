@@ -640,13 +640,91 @@ strong {
     left: 382px;
   }
 }
-@media (max-width: 1390px) {
-  .ads-img {
-    display: none;
-  }
-  #header {
+@media (max-width: 1397px) {
+  /* #header {
     height: 709px;
     background-size: 100% 965px;
+  }
+
+  #header>.banner>.contact {
+    display: none;
+  }
+  #header>.banner>.logo {
+    float: inherit;
+  } */
+  #header {
+    height: 818px;
+  }
+  #header>.banner {
+    padding: 30px 62px;
+  }
+  #header>.ads img:nth-child(1) {
+    width: inherit;
+    top: 187px;
+  }
+  #header>.ads .board {
+    left: 558px;
+    top: 183px;
+  }
+  #header>.ads .board h1 {
+    font-size: 36px;
+  }
+  #header>.ads .board p.desc1 {
+    font-size: 19px;
+  }
+  #header>.ads .board .input-trans {
+    font-size: 15px;
+  }
+  #header>.ads .control-group .control {
+    font-size: 16px;
+  }
+  .button-head {
+    font-size: 15px;
+    width: 155px;
+    height: 40px;
+  }
+  #header>.ads .board p.desc2 {
+    font-size: 15px;
+  }
+  #body>.advantages .adv-head img.odul {
+    width: inherit;
+    height: inherit;
+    top: -347px;
+  }
+  #body>.meta-trader .meta-body .meta-title>img {
+    display: none;
+  }
+  #body>.meta-trader .meta-body {
+    padding: 350px 165px 68px 163px;
+  }
+}
+
+@media (max-width: 1194px) {
+  #header {
+    height: 752px;
+  }
+  #header>.ads img:nth-child(1) {
+    width: 511px;
+    top: 260px;
+    left: -114px;
+  }
+  #body>.advantages .adv-head img.odul {
+    width: 354px;
+    height: inherit;
+    top: -284px;
+    left: -4px;
+  }
+  #header>.ads .board {
+    left: 383px;
+  }
+  #header>.ads .board p.desc2 {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ads-img {
+    display: none;
   }
   #header>.ads {
     position: inherit;
@@ -659,21 +737,6 @@ strong {
   #header>.ads .control-group {
     text-align: left;
   }
-  #header>.banner>.contact {
-    display: none;
-  }
-  #header>.banner>.logo {
-    float: inherit;
-  }
-  #body>.meta-trader .meta-body .meta-title>img {
-    display: none;
-  }
-  #body>.meta-trader .meta-body {
-    padding: 350px 165px 68px 163px;
-  }
-}
-
-@media (max-width: 768px) {
   h1 {
     font-size: 23px !important;
   }
